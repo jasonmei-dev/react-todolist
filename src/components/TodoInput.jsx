@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const TodoInput = ({ handleAddTodos }) => {
+const TodoInput = ({ handleAddTodo }) => {
   const [todoValue, setTodoValue] = useState('');
 
   const handleChange = (e) => {
@@ -8,7 +8,7 @@ const TodoInput = ({ handleAddTodos }) => {
   };
 
   const handleClick = () => {
-    handleAddTodos(todoValue);
+    handleAddTodo(todoValue);
     setTodoValue('');
   };
 
