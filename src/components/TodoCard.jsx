@@ -1,10 +1,10 @@
-const TodoCard = ({ todo, handleDeleteTodo }) => {
+const TodoCard = ({ todo, todoIndex, handleDeleteTodo }) => {
   const handleEditClick = () => {
     console.log('Should edit', todo);
   };
 
   const handleDeleteClick = () => {
-    handleDeleteTodo(todo);
+    handleDeleteTodo(todoIndex);
   };
 
   return (

@@ -10,8 +10,8 @@ function App() {
     setTodos(newTodoList);
   }
 
-  function handleDeleteTodo(todoToDelete) {
-    const updatedTodoList = todos.filter((todo) => todo !== todoToDelete);
+  function handleDeleteTodo(indexToDelete) {
+    const updatedTodoList = todos.filter((todo, todoIndex) => todoIndex !== indexToDelete);
     setTodos(updatedTodoList);
   }
 
